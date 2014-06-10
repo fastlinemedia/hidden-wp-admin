@@ -17,6 +17,8 @@ This plugin is useful if you want to allow signups for your site but only want u
 
 You are also given the option to redirect the WordPress login and signup pages to your own custom pages. Redirecting those pages in addition to the admin can also help secure your site from someone trying to attack those URLs. 
 
+Hidden WP Admin is brought to you by the fine folks at [FastLine Themes](http://themes.fastlinemedia.com/).
+
 == Installation ==
 
 1. Install Hide WP Admin either via the WordPress plugin directory, or by uploading the files to your server at wp-content/plugins.
