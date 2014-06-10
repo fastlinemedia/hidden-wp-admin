@@ -1,4 +1,4 @@
-Hide WP Admin
+Hidden WP Admin
 =============
 
 This plugin allows you to hide the WordPress admin, login and signup pages from all users except those with a specific capability. Unauthorized users will be redirected via a 301 redirect to your site's homepage or a URL that you specify in the settings.

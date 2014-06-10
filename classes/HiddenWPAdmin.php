@@ -1,9 +1,9 @@
 <?php
 
 /**
- * @class FLHiddenAdmin
+ * @class HiddenWPAdmin
  */
-class FLHiddenAdmin {
+class HiddenWPAdmin {
 
 	/**
      * @method init
@@ -12,7 +12,7 @@ class FLHiddenAdmin {
     {
         global $pagenow;
         
-        $settings = FLHiddenAdminSettings::get_all();
+        $settings = HiddenWPAdminSettings::get_all();
     	$login 	  = in_array( $pagenow, array( 'wp-login.php', 'wp-register.php' ) );
     	$signup   = $pagenow == 'wp-signup.php';
     	
@@ -47,7 +47,7 @@ class FLHiddenAdmin {
      */
     static public function redirect_admin()
     {
-        $settings = FLHiddenAdminSettings::get_all();
+        $settings = HiddenWPAdminSettings::get_all();
         
         // Don't redirect AJAX requests.
     	if( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
@@ -82,7 +82,7 @@ class FLHiddenAdmin {
      */
     static public function redirect_login()
     {
-        $settings = FLHiddenAdminSettings::get_all();
+        $settings = HiddenWPAdminSettings::get_all();
         
         if( !empty( $settings['login_url'] ) ) {
             wp_redirect( $settings['login_url'], 301 );
@@ -95,7 +95,7 @@ class FLHiddenAdmin {
      */
     static public function redirect_signup()
     {
-        $settings = FLHiddenAdminSettings::get_all();
+        $settings = HiddenWPAdminSettings::get_all();
         
         if( !empty( $settings['signup_url'] ) ) {
             wp_redirect( $settings['signup_url'], 301 );

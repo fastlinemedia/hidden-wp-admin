@@ -1,4 +1,4 @@
-=== Hide WP Admin ===
+=== Hidden WP Admin ===
 Contributors: justinbusa
 Tags: lockdown, secure, hide, login, wp-login, admin, wp-admin, multisite, redirect
 Requires at least: 3.5
@@ -34,6 +34,10 @@ Yes Multisite is supported. The settings page will be located in the Network Adm
 = Do I need a custom login or signup page to hide those? =
 
 Yes, this plugin assumes that you still want users to signup and login at your site, just not access the admin.
+
+= Help! I locked myself out of my site. =
+
+It is possible to lock yourself out of your site if you set the login page to redirect to a custom login page that doesn't have a login form. If that happens, you will need to FTP into your site and manually delete the plugin. 
 
 == Screenshots ==
 

@@ -1,9 +1,9 @@
 <?php
 
 /**
- * @class FLHiddenAdminSettings
+ * @class HiddenWPAdminSettings
  */
-class FLHiddenAdminSettings {
+class HiddenWPAdminSettings {
 	 
 	/**
      * @method get_all
@@ -20,7 +20,7 @@ class FLHiddenAdminSettings {
 	        'redirect_signup_page'  => ''
 	    );
 	    
-	    $settings = get_site_option('fl-hidden-admin', array());
+	    $settings = get_site_option('hidden-wp-admin', array());
 	    
 	    return array_merge( $defaults, $settings );
 	}
@@ -31,10 +31,10 @@ class FLHiddenAdminSettings {
 	static public function get_settings_link()
 	{
 	    if( is_multisite() ) {
-    	    return network_admin_url( '/settings.php?page=fl-hidden-admin' );
+    	    return network_admin_url( '/settings.php?page=hidden-wp-admin' );
 	    }
 	    else {
-            return admin_url( '/options-general.php?page=fl-hidden-admin' );
+            return admin_url( '/options-general.php?page=hidden-wp-admin' );
 	    }
 	}
 
@@ -43,10 +43,10 @@ class FLHiddenAdminSettings {
      */
 	static public function menu() 
 	{
-	    $title = __( 'Hide WP Admin', 'fl-hidden-admin' );
+	    $title = __( 'Hidden WP Admin', 'hidden-wp-admin' );
 	    $cap   = 'activate_plugins';
-	    $slug  = 'fl-hidden-admin';
-	    $func  = 'FLHiddenAdminSettings::render';
+	    $slug  = 'hidden-wp-admin';
+	    $func  = 'HiddenWPAdminSettings::render';
 	    
 	    if( is_multisite() ) {
     	    add_submenu_page( 'settings.php', $title, $title, $cap, $slug, $func );
@@ -61,7 +61,7 @@ class FLHiddenAdminSettings {
      */	 
 	static public function action_link( $actions )
 	{
-        $actions[] = '<a href="' . self::get_settings_link() . '">' . __( 'Settings', 'fl-hidden-admin' ) . '</a>';
+        $actions[] = '<a href="' . self::get_settings_link() . '">' . __( 'Settings', 'hidden-wp-admin' ) . '</a>';
         
         return $actions;
 	}
@@ -73,7 +73,7 @@ class FLHiddenAdminSettings {
 	{
 	    $settings = self::get_all();
 	    
-	    include FL_HIDDEN_ADMIN_DIR . 'includes/settings.php';
+	    include HIDDEN_WP_ADMIN_DIR . 'includes/settings.php';
 	}
 	 
 	/**
@@ -81,13 +81,13 @@ class FLHiddenAdminSettings {
      */	 
 	static public function save()
 	{
-	    if( isset( $_POST['fl-hidden-admin-nonce'] ) ) {
+	    if( isset( $_POST['hidden-wp-admin-nonce'] ) ) {
 	    
-	        if( wp_verify_nonce( $_POST['fl-hidden-admin-nonce'], 'save' ) ) {
+	        if( wp_verify_nonce( $_POST['hidden-wp-admin-nonce'], 'save' ) ) {
 	        
 	            $_POST['settings']['capability'] = self::get_capability( $_POST['settings']['capability'] );
 	        
-    	        update_site_option( 'fl-hidden-admin', $_POST['settings'] );
+    	        update_site_option( 'hidden-wp-admin', $_POST['settings'] );
 	        }
 	    }
 	}
