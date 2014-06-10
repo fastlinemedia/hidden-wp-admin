@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Hidden WP Admin
- * Plugin URI: http://themes.fastlinemedia.com
+ * Plugin URI: http://wordpress.org/plugins/hidden-wp-admin/
  * Description: Hide WP admin, login and signup from all users except those you allow.
  * Version: 1.1
  * Author: FastLine Themes
