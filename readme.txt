@@ -2,7 +2,7 @@
 Contributors: justinbusa
 Tags: lockdown, secure, hide, login, wp-login, admin, wp-admin, multisite, redirect
 Requires at least: 3.5
-Tested up to: 3.9.1
+Tested up to: 4.1
 Stable tag: trunk
 License: GPL2+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
