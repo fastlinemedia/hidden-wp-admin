@@ -2,8 +2,14 @@
     
     <h2>
         <?php _e( 'Hidden WP Admin', 'hidden-wp-admin' ); ?>
-        <span style="font-size: 14px; color: #999;"><?php _e( 'By', 'hidden-wp-admin' ); ?> <a href="http://themes.fastlinemedia.com/?utm_source=hidden-admin&utm_medium=header&utm_campaign=hidden-admin" target="_blank">FastLine Themes</a></span>
+        <span style="font-size: 14px; color: #999;"><?php _e( 'By', 'hidden-wp-admin' ); ?> <a href="https://www.wpbeaverbuilder.com/?utm_source=external&utm_medium=hidden-wp-admin&utm_campaign=settings-page" target="_blank">The Beaver Builder Team</a></span>
     </h2>
+    
+    <?php if ( ! empty( $_POST ) ) : ?>
+    <div class="updated">
+	    <p><?php _e( 'Settings Updated!', 'hidden-wp-admin' ); ?></p>
+    </div>
+    <?php endif; ?>
     
     <form method="post" action=""> 
         

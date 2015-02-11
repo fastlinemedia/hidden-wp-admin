@@ -17,13 +17,13 @@ This plugin is useful if you want to allow signups for your site but only want u
 
 You are also given the option to redirect the WordPress login and signup pages to your own custom pages. Redirecting those pages in addition to the admin can also help secure your site from someone trying to attack those URLs. 
 
-Hidden WP Admin is brought to you by the fine folks at [FastLine Themes](http://themes.fastlinemedia.com/).
+Hidden WP Admin is brought to you by the fine folks at [Beaver Builder](https://www.wpbeaverbuilder.com/?utm_source=external&utm_medium=hidden-wp-admin&utm_campaign=repo).
 
 == Installation ==
 
-1. Install Hide WP Admin either via the WordPress plugin directory, or by uploading the files to your server at wp-content/plugins.
+1. Install Hidden WP Admin either via the WordPress plugin directory, or by uploading the files to your server at wp-content/plugins.
 
-2. After activating Hide WP Admin by [FastLine Themes](http://themes.fastlinemedia.com/), navigate to the settings page at Settings > Hide WP Admin. The settings page will be located in the Network Admin if you have Multisite installed. 
+2. After activating Hidden WP Admin, navigate to the settings page at Settings > Hidden WP Admin. The settings page will be located in the Network Admin if you have Multisite installed. 
 
 3. Set your desired settings and click the save button to finish. 
 
@@ -47,13 +47,14 @@ It is possible to lock yourself out of your site if you set the login page to re
 
 == Changelog ==
 
-= Version 1.0 =
+= Version 1.1 =
 
 Initial release.
 
-== Upgrade Notice ==
+== Changelog ==
 
-= Version 1.0 =
+= Version 1.2 =
 
-Initial release.
+- Fixed a bug that broke logging out in some cases. 
+- Added update message to settings page.
 

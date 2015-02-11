@@ -21,6 +21,11 @@ class HiddenWPAdmin {
         	return;
     	}
     	
+    	// Are we logging out?
+    	else if( isset( $_REQUEST['action'] ) && $_REQUEST['action'] == 'logout' ) {
+    		return;
+    	}
+    	
     	// Redirect admin request.
     	else if( is_admin() ) {
     		self::redirect_admin();
