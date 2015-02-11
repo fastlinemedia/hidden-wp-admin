@@ -17,7 +17,7 @@ This plugin is useful if you want to allow signups for your site but only want u
 
 You are also given the option to redirect the WordPress login and signup pages to your own custom pages. Redirecting those pages in addition to the admin can also help secure your site from someone trying to attack those URLs. 
 
-Hidden WP Admin is brought to you by the fine folks at [Beaver Builder](https://www.wpbeaverbuilder.com/?utm_source=external&utm_medium=hidden-wp-admin&utm_campaign=repo).
+Hidden WP Admin is brought to you by the fine folks at [Beaver Builder](https://www.wpbeaverbuilder.com/?utm_source=external&utm_medium=wp-repo&utm_campaign=hidden-admin-description).
 
 == Installation ==
 
